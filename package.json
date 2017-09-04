@@ -1,0 +1,40 @@
+{
+  "name": "karma-typescript-library-starter",
+  "version": "1.0.0",
+  "description": "Simple library starter with karma and typescript preconfigured",
+  "main": "dist/library.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc -w",
+    "test": "karma start karma.config.js --single-run",
+    "lint": "tslint \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/harunurhan/karma-typescript-library-starter.git"
+  },
+  "keywords": [
+    "library",
+    "typescript",
+    "karma",
+    "jasmine",
+    "starter",
+    "module"
+  ],
+  "author": "Harun Urhan <harunurhan17@gmail.com> (http://github.com/harunurhan)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harunurhan/karma-typescript-library-starter/issues"
+  },
+  "homepage": "https://github.com/harunurhan/karma-typescript-library-starter#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.54",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-typescript": "^3.0.5",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  }
+}
