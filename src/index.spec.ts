@@ -1,4 +1,4 @@
-import { Library } from './library';
+import { Library } from './index';
 
 describe('Library', () => {
   it('shoud do thing', () => {

@@ -1,11 +1,12 @@
 {
   "name": "karma-typescript-library-starter",
   "version": "1.0.0",
-  "description": "Simple library starter with karma and typescript preconfigured",
-  "main": "dist/library.ts",
+  "description": "Simple library starter with karma and typescript pre configured",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "tsc -w",
+    "build:watch": "tsc -w",
+    "start": "karma start karma.config.js",
     "test": "karma start karma.config.js --single-run",
     "lint": "tslint \"src/**/*.ts\""
   },
