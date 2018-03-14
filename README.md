@@ -6,6 +6,6 @@ It's a minimal starter project to create browser or node library modules in type
 
 - `git clone https://github.com/harunurhan/karma-typescript-library-starter.git <project-name>`
 - `git remote set-url origin https://github.com/<user>/<project-name>.git`
-- Edit your package.json
+- Edit package.json, etc.
 - Start developing
 - [`git remote add starter https://github.com/harunurhan/karma-typescript-library-starter.git`] (only to fetch upgrades)
