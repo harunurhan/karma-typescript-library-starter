@@ -9,6 +9,8 @@ before_install:
 - sleep 3
 addons:
   chrome: stable
+before_deploy:
+- npm run build
 deploy:
   provider: npm
   email: harunurhan17@gmail.com
