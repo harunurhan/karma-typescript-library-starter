@@ -1,6 +1,6 @@
 {
   "name": "karma-typescript-library-starter",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Simple library starter with karma and typescript pre configured",
   "main": "dist/index.js",
   "scripts": {
