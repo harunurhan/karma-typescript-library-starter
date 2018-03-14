@@ -8,7 +8,10 @@
     "build:watch": "tsc -w",
     "start": "karma start karma.config.js",
     "test": "karma start karma.config.js --single-run",
-    "lint": "tslint \"src/**/*.ts\""
+    "lint": "tslint \"src/**/*.ts\"",
+    "preversion": "npm test",
+    "version": "npm run build",
+    "postversion": "git push upstream && git push upstream --tags"
   },
   "repository": {
     "type": "git",

@@ -2,12 +2,19 @@ language: node_js
 dist: trusty
 sudo: required
 node_js:
- - "9.5.0"
-
+- 9.5.0
 before_install:
- - export DISPLAY=:99.0
- - sh -e /etc/init.d/xvfb start
- - sleep 3 # give xvfb some time to start
-
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- sleep 3
 addons:
   chrome: stable
+deploy:
+  provider: npm
+  email: harunurhan17@gmail.com
+  api_key:
+    secure: MT+efA2t/U56LdveBAAdV4cgSA4BJwtODoy27MWQ6UJMh8nAG92veTUS1B6hC0Fq8zXid7jp8UaX14Jr0pEhrj2UKXl5v2CQPk+UkSNvYWo0aDVCfYyquWSMj4aCGHzzoKlIkC/Zkuqn8idF0Tooim/kResRCYkR0cJEikR+qESLVqK3/U+wHlvVVfG0JZAXgyX/aggpYd3lBo94CZumlQ0kFAZowEXmqKk9JdI8o0uPKsW8lpNFA7D2BQofwbRo4Kj/jtafDi2C4zCqawjtIiANtUEWrxnusWYF1/Rj2mfEyid6ImZo6BJ1Rv7Y/8iM9zguM52IKshWK4bnozS/CvaV3EPTQKNrvybMAU5xqAeeUzatd2TNNvql6CnIyolx3LUXKXVCkAkxu0HoY0BpvJyLBaT6LeD7zFR7OuTCrWTbgIa6DvZez2Ac0K8DOno2R44t/CNKQlWBqG4YyHpBhugL/uXSS8jL7aOsb9w2RCEWn0n1MbkxGStwo1g22wDtYs3WWTMMVGffS6196zOZ/YcNmK8kAcRZedX1EhPJNiz5mS34ZshyzXZ2gQ5b54pvN7qm5mnWhQQo4ogmCVlurVn3tcQYeBb8yi/ilktSixBm7e+Ery8nFRlHr3mN77tWTVEyEXsZq0vIJnnQlLiauQUtIsU4tdGZWPCpRTePfv8=
+  on:
+    tags: true
+    repo: harunurhan/karma-typescript-library-starter
+    branch: master
