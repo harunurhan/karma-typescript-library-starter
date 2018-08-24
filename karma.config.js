@@ -8,9 +8,6 @@ module.exports = function (config) {
       "**/*.ts": ["karma-typescript"],
     },
     karmaTypescriptConfig: {
-      compilerOptions: {
-        module: "commonjs"
-      },
       tsconfig: "./tsconfig.json",
     },
     browsers: ["Chrome"]
